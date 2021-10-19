@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8</title>
+</head>
+<body>
+
+<div id="masterdiv">
+    <h1 style="text-align: center;">Rock - Paper - Scissors</h1>
+
+    <form id="myForm" style="text-align: center;">
+
+        <label for="user-select">Select:</label>
+        <select name="user-select" id="rps-select">
+            <option value="1">Rock</option>
+            <option value="2">Paper</option>
+            <option value="3">Scissors</option>
+        </select>
+
+        <button type="button" onclick="userSubmit()" id="play">Play!</button>
+    </form>
+    
+    <div style="text-align: center;">
+    <h2 id="humanSelect" hidden>You selected: </h2>
+    <img src="" id="humanPick" hidden>
+    </div>
+
+    <div style="text-align: center;">
+    <h2 id="computerSelect" hidden>The computer selected: </h2>
+    <img src="" id="computerPick" hidden>
+    </div>
+
+    <div style="text-align: center;">
+        <h3 id="winner" hidden>Winner is: </h3>
+    </div>
+
+
+    <script src="script.js"></script>
+</div>
+
+<div style="margin:10% 0% 0% 45%;">
+<h2 id="gameOver" hidden>GAME OVER!</h2>
+<p id="overall" hidden>Overall Winner is : </p>
+</div>
+    
+</body>
+</html>
